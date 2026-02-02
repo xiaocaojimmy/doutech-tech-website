@@ -697,6 +697,21 @@ p {
 .footer-bottom p {
   display: inline-block;
   margin: 0 var(--space-sm);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    white-space: normal;
+  }
 }
 
 /* ============================================
