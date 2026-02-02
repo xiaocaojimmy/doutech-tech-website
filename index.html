@@ -31,8 +31,7 @@
     <link rel="alternate icon" type="image/x-icon" href="images/favicon.ico">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fixes.css">
+    <link rel="stylesheet" href="css/tech-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -56,21 +55,21 @@
     </script>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="container">
+    <!-- 科技风导航栏 -->
+    <nav class="tech-navbar">
+        <div class="container nav-container">
             <div class="nav-brand">
-                <a href="/" class="logo">
+                <a href="/" class="tech-logo">
                     <span class="logo-icon">🌱</span>
                     <span class="logo-text">DoudingTech</span>
                 </a>
             </div>
-            <div class="nav-menu">
-                <a href="/" class="nav-link active">首页</a>
-                <a href="#product" class="nav-link">产品</a>
-                <a href="#about" class="nav-link">关于</a>
-                <a href="#contact" class="nav-link">联系</a>
-                <a href="https://github.com" class="nav-link cta-button">GitHub</a>
+            <div class="tech-nav-menu">
+                <a href="/" class="tech-nav-link active">首页</a>
+                <a href="#product" class="tech-nav-link">产品</a>
+                <a href="#about" class="tech-nav-link">关于</a>
+                <a href="#contact" class="tech-nav-link">联系</a>
+                <a href="https://github.com/xiaocaojimmy" class="tech-button secondary" target="_blank" rel="noopener">GitHub</a>
             </div>
             <button class="mobile-menu-btn" aria-label="菜单">
                 <span></span>
@@ -82,237 +81,250 @@
 
     <!-- 主要内容 -->
     <main id="main-content">
-        <!-- 英雄区域 -->
-        <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">智能技术，简单开发</h1>
-                <p class="hero-subtitle">
-                    DoudingTech为每个人提供简单易用的智能技术解决方案。无论您是否有技术背景，我们的AI技术都能帮助您轻松应对技术挑战，让复杂的技术选择变得简单明了。
-                </p>
-                <div class="hero-actions">
-                    <a href="#product" class="btn btn-primary">免费试用 TechAdvisor Pro</a>
-                    <a href="#contact" class="btn btn-secondary">联系我们</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder">
-                    <div class="placeholder-content">
-                        <div class="tech-icon" aria-hidden="true">🤖</div>
-                        <div class="placeholder-text">TechAdvisor Pro 产品演示</div>
+        <!-- 科技风英雄区域 -->
+        <section class="tech-hero section-padding">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">智能技术，简单开发</h1>
+                    <p class="hero-subtitle text-lead">
+                        DoudingTech为每个人提供简单易用的智能技术解决方案。无论您是否有技术背景，我们的AI技术都能帮助您轻松应对技术挑战，让复杂的技术选择变得简单明了。
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#product" class="tech-button">免费试用 TechAdvisor Pro</a>
+                        <a href="#contact" class="tech-button secondary">联系我们</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 产品亮点 -->
-    <section id="product" class="features">
-        <div class="container">
-            <h2 class="section-title">为什么选择 TechAdvisor Pro</h2>
-            <p class="section-subtitle">让技术选择变得简单明了，每个人都能找到适合自己的解决方案</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🤖</div>
-                    <h3 class="feature-title">智能理解需求</h3>
-                    <p class="feature-desc">
-                        只需简单描述您的需求，我们的AI就能准确理解并为您推荐最合适的技术方案，无需专业术语。
-                    </p>
-                </div>
+        <!-- 产品亮点 -->
+        <section id="product" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">为什么选择 TechAdvisor Pro</h2>
+                <p class="section-subtitle">让技术选择变得简单明了，每个人都能找到适合自己的解决方案</p>
                 
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🔧</div>
-                    <h3 class="feature-title">个性化方案推荐</h3>
-                    <p class="feature-desc">
-                        根据您的具体需求和背景，为您量身定制最适合的技术方案，无论是简单项目还是复杂应用。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🌐</div>
-                    <h3 class="feature-title">真实案例参考</h3>
-                    <p class="feature-desc">
-                        参考大量成功项目的实践经验，为您提供经过验证的有效方案，避免走弯路。
-                    </p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🚀</div>
-                    <h3 class="feature-title">一步步实施指导</h3>
-                    <p class="feature-desc">
-                        从开始到完成，我们提供详细的步骤指导，让您轻松实施所选方案，无需担心技术细节。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 技术优势 -->
-    <section class="advantages">
-        <div class="container">
-            <h2 class="section-title">我们的技术优势</h2>
-            <div class="advantages-list">
-                <div class="advantage-item">
-                    <div class="advantage-check" aria-hidden="true">✅</div>
-                    <div class="advantage-content">
-                        <h3>简单易用</h3>
-                        <p>无需技术背景，我们的工具设计直观，让每个人都能轻松上手使用。</p>
+                <div class="grid grid-2">
+                    <div class="feature-card glass-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🤖</div>
+                        <h3 class="feature-title">智能理解需求</h3>
+                        <p class="feature-desc">
+                            只需简单描述您的需求，我们的AI就能准确理解并为您推荐最合适的技术方案，无需专业术语。
+                        </p>
                     </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="advantage-check" aria-hidden="true">✅</div>
-                    <div class="advantage-content">
-                        <h3>智能推荐</h3>
-                        <p>基于大量实际案例和最佳实践，为您提供最适合的技术方案建议。</p>
+                    
+                    <div class="feature-card glass-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🔧</div>
+                        <h3 class="feature-title">个性化方案推荐</h3>
+                        <p class="feature-desc">
+                            根据您的具体需求和背景，为您量身定制最适合的技术方案，无论是简单项目还是复杂应用。
+                        </p>
                     </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="advantage-check" aria-hidden="true">✅</div>
-                    <div class="advantage-content">
-                        <h3>持续优化</h3>
-                        <p>我们的系统不断学习和改进，确保您始终获得最新、最准确的技术建议。</p>
+                    
+                    <div class="feature-card glass-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🌐</div>
+                        <h3 class="feature-title">真实案例参考</h3>
+                        <p class="feature-desc">
+                            参考大量成功项目的实践经验，为您提供经过验证的有效方案，避免走弯路。
+                        </p>
                     </div>
-                </div>
-                
-                <div class="advantage-item">
-                    <div class="advantage-check" aria-hidden="true">✅</div>
-                    <div class="advantage-content">
-                        <h3>安全可靠</h3>
-                        <p>您的数据和隐私得到充分保护，我们采用安全可靠的技术架构。</p>
+                    
+                    <div class="feature-card glass-card fade-in">
+                        <div class="feature-icon" aria-hidden="true">🚀</div>
+                        <h3 class="feature-title">一步步实施指导</h3>
+                        <p class="feature-desc">
+                            从开始到完成，我们提供详细的步骤指导，让您轻松实施所选方案，无需担心技术细节。
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 关于我们 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">关于 DoudingTech</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        DoudingTech（豆丁科技）成立于2026年2月1日，是一家专注于智能技术解决方案的初创公司。我们的使命是通过AI技术让技术选型和系统管理变得更简单、更智能。
-                    </p>
-                    <p>
-                        我们采用创新的AI技术模式，专注于让复杂的技术变得简单易用。无论您是技术专家还是普通用户，我们都能为您提供合适的解决方案。
-                    </p>
-                    <div class="mission-info">
-                        <h3>我们的使命</h3>
-                        <ul>
-                            <li><strong>简化技术选择</strong>：帮助用户轻松选择最适合的技术方案</li>
-                            <li><strong>降低使用门槛</strong>：让非技术人员也能享受先进技术带来的便利</li>
-                            <li><strong>提供智能指导</strong>：通过AI技术为用户提供个性化的技术建议</li>
-                            <li><strong>持续创新优化</strong>：不断改进产品，满足用户不断变化的需求</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <div class="placeholder-content">
-                            <div class="team-icon" aria-hidden="true">👥</div>
-                            <div class="placeholder-text">技术让生活更简单</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系 -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">联系我们</h2>
-            <p class="section-subtitle">无论您是想要试用产品、寻求技术合作，还是想要了解更多信息，我们都期待与您交流。</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>直接联系</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon" aria-hidden="true">📧</div>
-                        <div class="contact-detail">
-                            <h4>商务合作</h4>
-                            <p>doutechceo@163.com</p>
+        <!-- 技术优势 -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">我们的技术优势</h2>
+                
+                <div class="grid">
+                    <div class="advantage-item glass-card fade-in">
+                        <div class="advantage-check" aria-hidden="true">✅</div>
+                        <div class="advantage-content">
+                            <h3 class="advantage-title">简单易用</h3>
+                            <p class="advantage-desc">无需技术背景，我们的工具设计直观，让每个人都能轻松上手使用。</p>
                         </div>
                     </div>
                     
-                    <div class="contact-item">
-                        <div class="contact-icon" aria-hidden="true">🌐</div>
-                        <div class="contact-detail">
-                            <h4>公司网站</h4>
-                            <p>https://doutech.tech</p>
+                    <div class="advantage-item glass-card fade-in">
+                        <div class="advantage-check" aria-hidden="true">✅</div>
+                        <div class="advantage-content">
+                            <h3 class="advantage-title">智能推荐</h3>
+                            <p class="advantage-desc">基于大量实际案例和最佳实践，为您提供最适合的技术方案建议。</p>
                         </div>
                     </div>
                     
-                    <div class="contact-item">
-                        <div class="contact-icon" aria-hidden="true">📍</div>
-                        <div class="contact-detail">
-                            <h4>公司地址</h4>
-                            <p>中国（具体地址待补充）</p>
+                    <div class="advantage-item glass-card fade-in">
+                        <div class="advantage-check" aria-hidden="true">✅</div>
+                        <div class="advantage-content">
+                            <h3 class="advantage-title">持续优化</h3>
+                            <p class="advantage-desc">我们的系统不断学习和改进，确保您始终获得最新、最准确的技术建议。</p>
                         </div>
                     </div>
                     
-                    <div class="contact-item">
-                        <div class="contact-icon" aria-hidden="true">📞</div>
-                        <div class="contact-detail">
-                            <h4>联系电话</h4>
-                            <p>（待补充）</p>
+                    <div class="advantage-item glass-card fade-in">
+                        <div class="advantage-check" aria-hidden="true">✅</div>
+                        <div class="advantage-content">
+                            <h3 class="advantage-title">安全可靠</h3>
+                            <p class="advantage-desc">您的数据和隐私得到充分保护，我们采用安全可靠的技术架构。</p>
                         </div>
                     </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>发送消息</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">姓名 *</label>
-                            <input type="text" id="name" name="name" autocomplete="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">邮箱 *</label>
-                            <input type="email" id="email" name="email" autocomplete="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">公司/职位</label>
-                            <input type="text" id="company" name="company" autocomplete="organization">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="type">咨询类型</label>
-                            <select id="type" name="type">
-                                <option value="product">产品咨询</option>
-                                <option value="cooperation">技术合作</option>
-                                <option value="media">媒体联系</option>
-                                <option value="other">其他</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">留言内容 *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">发送消息</button>
-                        <p class="form-note">我们承诺在24小时内回复所有咨询。</p>
-                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- 关于我们 -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">关于 DoudingTech</h2>
+                <div class="grid">
+                    <div class="glass-card fade-in">
+                        <p class="text-lead">
+                            DoudingTech（豆丁科技）成立于2026年2月1日，是一家专注于智能技术解决方案的初创公司。我们的使命是通过AI技术让技术选型和系统管理变得更简单、更智能。
+                        </p>
+                        <p>
+                            我们采用创新的AI技术模式，专注于让复杂的技术变得简单易用。无论您是技术专家还是普通用户，我们都能为您提供合适的解决方案。
+                        </p>
+                        <div class="mt-xl">
+                            <h3 class="mb-lg">我们的使命</h3>
+                            <div class="grid grid-2">
+                                <div class="advantage-item">
+                                    <div class="advantage-check" aria-hidden="true">✓</div>
+                                    <div class="advantage-content">
+                                        <h4 class="advantage-title">简化技术选择</h4>
+                                        <p class="advantage-desc">帮助用户轻松选择最适合的技术方案</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item">
+                                    <div class="advantage-check" aria-hidden="true">✓</div>
+                                    <div class="advantage-content">
+                                        <h4 class="advantage-title">降低使用门槛</h4>
+                                        <p class="advantage-desc">让非技术人员也能享受先进技术带来的便利</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item">
+                                    <div class="advantage-check" aria-hidden="true">✓</div>
+                                    <div class="advantage-content">
+                                        <h4 class="advantage-title">提供智能指导</h4>
+                                        <p class="advantage-desc">通过AI技术为用户提供个性化的技术建议</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item">
+                                    <div class="advantage-check" aria-hidden="true">✓</div>
+                                    <div class="advantage-content">
+                                        <h4 class="advantage-title">持续创新优化</h4>
+                                        <p class="advantage-desc">不断改进产品，满足用户不断变化的需求</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系 -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">联系我们</h2>
+                <p class="section-subtitle mb-3xl">无论您是想要试用产品、寻求技术合作，还是想要了解更多信息，我们都期待与您交流。</p>
+                
+                <div class="grid grid-2 gap-xl">
+                    <div class="glass-card fade-in">
+                        <h3 class="mb-lg">直接联系</h3>
+                        <div class="space-y-lg">
+                            <div class="advantage-item">
+                                <div class="advantage-check" aria-hidden="true">📧</div>
+                                <div class="advantage-content">
+                                    <h4 class="advantage-title">商务合作</h4>
+                                    <p class="advantage-desc">doutechceo@163.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="advantage-item">
+                                <div class="advantage-check" aria-hidden="true">🌐</div>
+                                <div class="advantage-content">
+                                    <h4 class="advantage-title">官方网站</h4>
+                                    <p class="advantage-desc">https://doutech.tech</p>
+                                </div>
+                            </div>
+                            
+                            <div class="advantage-item">
+                                <div class="advantage-check" aria-hidden="true">📍</div>
+                                <div class="advantage-content">
+                                    <h4 class="advantage-title">公司地址</h4>
+                                    <p class="advantage-desc">中国（具体地址待补充）</p>
+                                </div>
+                            </div>
+                            
+                            <div class="advantage-item">
+                                <div class="advantage-check" aria-hidden="true">📞</div>
+                                <div class="advantage-content">
+                                    <h4 class="advantage-title">联系电话</h4>
+                                    <p class="advantage-desc">（待补充）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card fade-in">
+                        <h3 class="mb-lg">发送消息</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">姓名 *</label>
+                                <input type="text" id="name" name="name" class="form-input" autocomplete="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">邮箱 *</label>
+                                <input type="email" id="email" name="email" class="form-input" autocomplete="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">公司/职位</label>
+                                <input type="text" id="company" name="company" class="form-input" autocomplete="organization">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="type" class="form-label">咨询类型</label>
+                                <select id="type" name="type" class="form-select">
+                                    <option value="product">产品咨询</option>
+                                    <option value="cooperation">技术合作</option>
+                                    <option value="media">媒体联系</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">留言内容 *</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="tech-button w-full">发送消息</button>
+                            <p class="text-small text-center mt-lg">我们承诺在24小时内回复所有咨询。</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
-    <!-- 页脚 -->
-    <footer class="footer">
+    <!-- 科技风页脚 -->
+    <footer class="tech-footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo">
+                    <div class="tech-logo">
                         <span class="logo-icon">🌱</span>
                         <span class="logo-text">DoudingTech</span>
                     </div>
@@ -323,7 +335,7 @@
                     <div class="footer-column">
                         <h4>产品</h4>
                         <a href="#product">TechAdvisor Pro</a>
-                        <a href="#features">功能特性</a>
+                        <a href="#product">功能特性</a>
                         <a href="#pricing">定价（待发布）</a>
                     </div>
                     
@@ -357,7 +369,7 @@
     </footer>
 
     <!-- 脚本 -->
-    <script src="js/main.js"></script>
+    <script src="js/tech-main.js"></script>
     
     <!-- 可访问性修复脚本 -->
     <script>
@@ -371,28 +383,12 @@
             });
             
             // 确保所有装饰性图标都有aria-hidden
-            const decorativeIcons = document.querySelectorAll('.feature-icon, .contact-icon, .tech-icon, .team-icon');
+            const decorativeIcons = document.querySelectorAll('.feature-icon, .advantage-check, .logo-icon');
             decorativeIcons.forEach(icon => {
                 if (!icon.hasAttribute('aria-hidden')) {
                     icon.setAttribute('aria-hidden', 'true');
                 }
             });
-            
-            // 为表单添加基本的验证
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    const submitBtn = this.querySelector('button[type="submit"]');
-                    if (submitBtn) {
-                        submitBtn.disabled = true;
-                        submitBtn.textContent = '发送中...';
-                        setTimeout(() => {
-                            submitBtn.disabled = false;
-                            submitBtn.textContent = '发送消息';
-                        }, 3000);
-                    }
-                });
-            }
         });
     </script>
 </body>
