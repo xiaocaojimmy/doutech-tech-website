@@ -694,6 +694,11 @@ p {
   font-size: var(--font-size-sm);
 }
 
+.footer-bottom p {
+  display: inline-block;
+  margin: 0 var(--space-sm);
+}
+
 /* ============================================
    6. 工具类
    ============================================ */
