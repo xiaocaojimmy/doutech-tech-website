@@ -1,0 +1,6 @@
+# DoudingTech Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://doutech.tech/sitemap.xml

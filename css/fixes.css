@@ -1,0 +1,95 @@
+/* DoudingTech 网站修复和优化样式 */
+
+/* ============================================
+   可访问性修复
+============================================ */
+
+/* 焦点状态修复 - 为所有可聚焦元素提供可见焦点 */
+*:focus-visible {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* 减少运动偏好支持 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* 装饰性图标隐藏 */
+.feature-icon[aria-hidden="true"],
+.advantage-check[aria-hidden="true"],
+.contact-icon[aria-hidden="true"] {
+    pointer-events: none;
+}
+
+/* ============================================
+   性能优化
+============================================ */
+
+/* 替换 transition: all 为具体属性 */
+.btn,
+.nav-link,
+.feature-card,
+.advantage-item,
+.contact-info,
+.contact-form {
+    transition-property: opacity, transform, background-color, color, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+/* 优化动画性能 - 使用 transform 和 opacity */
+.feature-card,
+.advantage-item,
+.contact-info,
+.contact-form {
+    will-change: transform, opacity;
+}
+
+/* ============================================
+   表单优化
+============================================ */
+
+/* 表单输入焦点状态 */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+}
+
+/* 提交按钮加载状态 */
+.btn[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* ============================================
+   语义化改进
+============================================ */
+
+/* 确保 main 区域正确显示 */
+main {
+    display: block; /* 为旧版浏览器修复 */
+}
+
+/* 打印样式优化 */
+@media print {
+    .hero-actions,
+    .contact-form,
+    .mobile-menu-btn {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+}
