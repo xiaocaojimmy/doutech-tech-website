@@ -649,8 +649,9 @@ p {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 2fr; /* 品牌区域占1份，链接区域占2份 */
   gap: var(--space-2xl);
+  align-items: start;
 }
 
 .footer-brand {
@@ -662,11 +663,12 @@ p {
 .footer-tagline {
   color: var(--text-tertiary);
   font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
 }
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 固定4列，均匀分布 */
   gap: var(--space-xl);
 }
 
@@ -843,11 +845,41 @@ p {
   .tech-button {
     width: 100%;
   }
+  
+  .footer-grid {
+    grid-template-columns: 1fr; /* 移动端垂直堆叠 */
+    gap: var(--space-xl);
+  }
+  
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr); /* 移动端显示2列 */
+    gap: var(--space-lg);
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
     max-width: 90%;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1.5fr; /* 平板设备调整比例 */
+  }
+  
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr); /* 平板显示2列，每列2个链接组 */
+    gap: var(--space-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr; /* 超小屏幕显示1列 */
+    gap: var(--space-lg);
+  }
+  
+  .footer-column {
+    text-align: center;
   }
 }
 
